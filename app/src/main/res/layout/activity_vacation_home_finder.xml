@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".VacationHomeFinderActivity">
+
+    <Spinner
+        android:id="@+id/feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Home_Features"/>
+
+    <Button
+        android:id="@+id/find_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/find_home"
+        android:layout_below="@+id/feature"
+        android:layout_alignLeft="@+id/feature"
+        android:onClick="onClickFindHome"/>
+
+    <TextView
+        android:id="@+id/brands"
+        android:text="@string/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/find_home"
+        android:layout_below="@+id/find_home"
+        android:layout_marginTop="18dp"
+         />
+
+
+
+</RelativeLayout>
